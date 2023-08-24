@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbarColor: #A88BEB;
+    --borderColor: #F8CEEC;
+    --backgroundShade: rgba(128, 128, 128, 0.082) ;
+    --text-color: #555;
+    --text-grey: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+body{
+    overflow-y: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Navbar */
+.navBArColor{
+    background-color: var(--navbarColor);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.navBArColor a{
+    color: white;
+    
+}
+.navBArColor a:hover{
+    color: white;
+}
+
+.loginBtn{
+    text-decoration: none;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+
+
+}
+.loginBtn:active{
+    scale: 1.1;
+
+}
+
+/* headingSignup */
+
+.headingSignup{
+    /* border: 3px solid red; */
+    background-color: white;
+    padding: 20px 60px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* signUpBody */
+
+.signUpBody{
+background-color: var(--backgroundShade);
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+padding-top: 60px;
+
+
+}
+
+.SignBox{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(128, 128, 128, 0.568) ;
+    padding: 70px;
+    height: 300px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.SignBox input{
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.432);
+    
+}
+.SignBox input::placeholder{
+    color: var(--text-grey);
+}
+.SignBox input:focus{
+    outline: none;
+    border: 2px solid var(--borderColor);
+}
+.btnDiv{
+    width: 100%;
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: center;
+}
+.signUpBtn{
+    /* border: 2px solid greenyellow; */
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--navbarColor);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+.signUpBtn:active{
+    scale: 1.1;
+}

@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navbarColor: #A88BEB;
+    --borderColor: #F8CEEC;
+    --backgroundShade: rgba(128, 128, 128, 0.082) ;
+    --text-color: #555;
+    --text-grey: #999;
+    --black-color: #000;
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Quicksand', sans-serif;
+}
+body{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Navbar */
+.navBArColor{
+    background-color: var(--navbarColor);
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+}
+.navBArColor a{
+    color: white;
+    
+}
+.navBArColor a:hover{
+    color: white;
+}
+
+.loginBtn{
+    text-decoration: none;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+
+
+}
+.loginBtn:active{
+    scale: 1.1;
+
+}
+
+/* headingSignup */
+
+.headingSignup{
+    /* border: 3px solid red; */
+    background-color: white;
+    padding: 20px 60px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--navbarColor);
+}
+
+/* signUpBody */
+
+.signUpBody{
+    
+    background-color: var(--backgroundShade);
+    display: flex;
+    justify-content: center;
+    height:fit-content;
+    
+
+    /* Left body */
+    
+    }
+    .leftbody{
+        /* border: 2px solid green; */
+    }
+    .postDiv{
+        background-color: var(--backgroundShade);
+        padding: 15px;
+        border-radius: 10px;
+
+    }
+    .blogPicture{
+        border-radius: 10px;
+        /* border: 2px solid green; */
+        
+    }
+
+
+    /* Right body */
+
+    
+   .titleNameTime{
+    /* border: 2px solid green; */
+    padding-top: 8px;
+   }
+   .titleNameTime span{
+    margin-right: 5px;
+    color: var(--text-grey);
+   }
+   .contentDiv{
+        /* border: 2px solid green; */
+        margin-top: 10px;
+
+
+   }
+   .contentDiv p{
+
+    margin-bottom: 5px;
+   }
+   .titleNameTime{
+   font-size: small;
+
+   }
+   .titleNameTime h6{
+    font-size: small;
+    font-weight: 700;
+ 
+    }
+   .contentDiv{
+    font-size: small;
+   }
+
+   /* Right Div Setting */
+   .rightBody{
+    
+    height: 100vh;
+    margin-top: 100px;
+    /* border: 2px solid green; */
+}
+
+
+   .profileImage{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    float: right;
+
+   }
+.rightBody span{
+    color: var(--navbarColor);
+    float: right;
+}
+.rightBody h3{
+    color: var(--navbarColor);
+    float: right;
+    
+}
+.appendDiv{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+   
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    /* border: 2px solid green; */
+    width: 120px; /* Set the desired width */
+    height: 120px; /* Set the desired height */
+
+}
+
+
+/* /////////////////////////  Media Query ///////////////////////////// */
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+
+
+    .signUpBody{
+    
+        background-color: var(--backgroundShade);
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        height:fit-content;
+        
+    
+        /* Left body */
+        
+        }
+    .navBArColor {
+      font-weight: bold;
+      font-size: medium;
+      /* border: 2px solid black; */
+      padding: 0;
+      margin: 0;
+    }
+    .navBArColor div {
+      /* border: 2px solid black; */
+      margin: 0 !important;
+      padding: 0 !important;
+      justify-content: space-evenly !important;
+    }
+    .headingSignup {
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .postDiv {
+      background-color: var(--backgroundShade);
+      padding: 0px;
+      border-radius: 10px;
+      margin: 0;
+    }
+    .appendDiv {
+      /* border: 2px solid green; */
+      margin: 10px;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    .leftbody {
+      /* border: 2px solid black; */
+      width: 100% !important;
+    }
+    .leftbody h4{
+      /* padding: 20px; */
+      /* border: 2px solid green; */
+
+    }
+    .rightBody{
+        width: 100% !important;
+      /* border: 2px solid green; */
+
+    }
+    .rightBody{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        height: 100%;
+        margin-top: 20px;
+        /* border: 2px solid green; */
+    }
+    
+    
+       .profileImage{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+    
+    
+       }
+    .rightBody span{
+        color: var(--navbarColor);
+        
+    }
+    .rightBody h3{
+        color: var(--navbarColor);
+        
+    }
+    
+  }
+  

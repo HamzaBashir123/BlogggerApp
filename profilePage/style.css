@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbarColor: #a88beb;
+  --borderColor: #f8ceec;
+  --backgroundShade: rgba(128, 128, 128, 0.082);
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+body {
+  background-color: var(--backgroundShade);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* Navbar */
+.navBArColor {
+  background-color: var(--navbarColor);
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+.navBArColor a {
+  color: white;
+}
+.navBArColor a:hover {
+  color: white;
+}
+
+.loginBtn {
+  text-decoration: none;
+}
+
+.loginBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.loginBtn:active {
+  scale: 1.1;
+}
+
+/* headingSignup */
+
+.headingSignup {
+  /* border: 3px solid red; */
+  background-color: white;
+  padding: 20px 60px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--navbarColor);
+}
+
+/* signUpBody */
+
+.signUpBody {
+  background-color: var(--backgroundShade);
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+
+  /* Left body */
+}
+.leftbody {
+  height: 100vh;
+  /* border: 2px solid green; */
+}
+.postDiv {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+.blogPicture {
+  border-radius: 10px;
+  /* border: 2px solid green; */
+}
+
+/* Right body */
+
+.titleNameTime {
+  /* border: 2px solid green; */
+  padding-top: 8px;
+}
+.titleNameTime span {
+  margin-right: 5px;
+  color: var(--text-grey);
+}
+.contentDiv {
+  /* border: 2px solid green; */
+  margin-top: 10px;
+}
+.contentDiv p {
+  margin-bottom: 5px;
+}
+.titleNameTime {
+  font-size: small;
+}
+.titleNameTime h6 {
+  font-size: small;
+  font-weight: 700;
+}
+.contentDiv {
+  font-size: small;
+}
+
+.signUpBtn {
+  /* border: 2px solid greenyellow; */
+  width: 130px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  background-color: var(--navbarColor);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.signUpBtn:active {
+  scale: 1.1;
+}
+
+.postDataDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 15px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.postDataDiv input{
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px ;
+    padding: 10px 20px;
+    width: 250px;
+}
+
+
+.useName{
+  margin-left: 12px;
+  font-size: 20px;
+}
+.profileImage{
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 12px;
+
+}
+.editPenimg{
+  position:absolute;
+  height: 25px;
+  width: 25px;
+  /* border: 2px solid green; */
+  margin-top: 22%;
+  margin-left: 22%;
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* border: 2px solid green; */
+  width: 120px; /* Set the desired width */
+  height: 120px; /* Set the desired height */
+
+}
+.uploadPic{
+  border: 2px solid green;
+  display: none;
+
+}
+
+/*        ////////////////////// Media Query  ///////////////////////////////////*/
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .navBArColor {
+    font-weight: bold;
+    font-size: medium;
+    /* border: 2px solid black; */
+    padding: 0;
+    margin: 0;
+  }
+  .navBArColor div {
+    /* border: 2px solid black; */
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: space-evenly !important;
+  }
+  .headingSignup {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 2px solid black; */
+
+  }
+  .rightBody{
+    display: none;
+  }
+
+  .signUpBody {
+    background-color: var(--backgroundShade);
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+
+  
+    /* Left body */
+  }
+  .leftbody {
+    height: 100vh;
+    width: 100% !important;
+    /* border: 2px solid green; */
+  }
+  .postDataDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundShade);
+    margin-top: 20px;
+    padding: 0px;
+    height: 100vh;
+    border-radius: 10px;
+  }
+  .postDataDiv input{
+      height: 40px;
+      border-radius: 10px;
+      margin: 10px ;
+      padding: 10px 10px;
+      width: 250px;
+  }
+  
+.signUpBtn {
+  margin-left: 0px;
+}
+.editPenimg{
+  position:absolute;
+  /* border: 2px solid green; */
+  margin-top: 50%;
+  margin-left: 22%;
+  z-index: 1;
+  cursor: pointer;
+  
+}
+  
+}

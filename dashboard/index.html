@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Font-Awesome-Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>dashboard</title>
+
+    <!-- Title icon -->
+    <link rel="icon" type="image/x-icon" href="./assets/facebook.svg" />
+  </head>
+<body>
+    
+
+    <!-- Navbar Tag -->
+    <nav class="navbar navBArColor px-5">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand p-0 m-0 " href="#">
+            <img src="../assets/mainLogo.png"  alt="Logo" width="30" height="35" class="d-inline-block align-text-center border rounded">
+            Personal Blogging App
+          </a>
+          <div>
+          <a href="../profilePage/index.html" class="loginBtn me-4" title="Go to Profile Page">Muhammad Hamza</a>
+          <span class="logoutBtn">Logout</span>
+        </div>
+        </div>
+      </nav>
+
+      <!-- Login Up Heading -->
+    
+      <h1 class="headingSignup">Dashboard</h1>
+      <!-- Form body -->
+      <div class="container-xxl col-12 signUpBody">
+        <div class="leftbody col-8">
+          <div class="postDataDiv">
+            <input class="blogTitle" type="text" placeholder="Post title" minlength="5" maxlength="50">
+            <textarea class="blogDescription" rows="4" cols="50" name="comment"  minlength="100" maxlength="3000"  placeholder="Post Content">
+              </textarea>
+            <button class="signUpBtn">Publish blogs</button>
+
+          </div>
+            <h4>My Blogs</h4>
+            <div class="postDiv m-3">
+               
+            
+
+          </div>
+
+
+        </div>
+
+
+        <!-- Edit window -->
+        <div class="popUPCapturefullScreen">
+          <div class="popUpWindow">
+            <img class="popUpCross" src="../assets/cross.png" alt="" />
+            <input class="editInput" type="text">
+            <textarea
+              name="comment"
+              id=""
+              cols="55"
+              rows="3"
+              class="textArea"
+            ></textarea>
+           
+  
+            <div class="d-flex justify-content-around">
+              
+              <button class="popUpButton">Update</button>
+            </div>
+          </div>
+        </div>
+        <div class="rightBody col-3">
+         
+
+        </div>
+
+       
+
+      </div>
+
+
+
+
+      <iframe class="loader" src="../Loader/index.html" frameborder="0" scrolling="no" style="width: 120px; height: 120px;"></iframe>
+
+
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

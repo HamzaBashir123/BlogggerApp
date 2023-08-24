@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --navbarColor: #a88beb;
+  --borderColor: #f8ceec;
+  --backgroundShade: rgba(128, 128, 128, 0.082);
+  --text-color: #555;
+  --text-grey: #999;
+  --black-color: #000;
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;
+}
+body {
+  overflow-y: scroll;
+  background-color: var(--backgroundShade);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* Navbar */
+.navBArColor {
+  background-color: var(--navbarColor);
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+.navBArColor a {
+  color: white;
+}
+.navBArColor a:hover {
+  color: white;
+}
+
+.loginBtn {
+  text-decoration: none;
+}
+
+.loginBtn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.loginBtn:active {
+  scale: 1.1;
+}
+
+.logoutBtn {
+  text-decoration: none;
+}
+
+.logoutBtn:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.logoutBtn:active {
+  scale: 1.1;
+}
+/* headingSignup */
+
+.headingSignup {
+  /* border: 3px solid red; */
+  background-color: white;
+  padding: 20px 60px;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--navbarColor);
+}
+
+/* signUpBody */
+
+.signUpBody {
+  background-color: var(--backgroundShade);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+
+  /* Left body */
+}
+.leftbody {
+  height: 100vh;
+  /* background-color: var(--backgroundShade); */
+  height: fit-content;
+  /* border: 2px solid green; */
+}
+.postDiv {
+  /* background-color: var(--backgroundShade); */
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.blogPicture {
+  border-radius: 10px;
+  /* border: 2px solid green; */
+}
+
+/* Right body */
+
+.titleNameTime {
+  /* border: 2px solid green; */
+  padding-top: 8px;
+}
+.titleNameTime span {
+  margin-right: 5px;
+  color: var(--text-grey);
+}
+.contentDiv {
+  /* border: 2px solid green; */
+  margin-top: 10px;
+}
+.contentDiv p {
+  margin-bottom: 5px;
+}
+.titleNameTime {
+  font-size: small;
+}
+.titleNameTime h6 {
+  font-size: small;
+  font-weight: 700;
+}
+.contentDiv {
+  font-size: small;
+}
+
+.signUpBtn {
+  /* border: 2px solid greenyellow; */
+  width: 110px;
+  font-size: small;
+  font-weight: bold;
+  color: white;
+  background-color: var(--navbarColor);
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.signUpBtn:active {
+  scale: 1.1;
+}
+
+.postDataDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 15px;
+  padding: 50px;
+  border-radius: 10px;
+}
+.postDataDiv input{
+    height: 40px;
+    border-radius: 10px;
+    margin: 10px ;
+    padding: 10px 20px;
+}
+.blogTitle:focus{
+  outline: none;
+  border: 2px solid var(--borderColor);
+  
+}
+.postDataDiv textarea{
+
+    border-radius: 10px;
+    margin: 10px ;
+    padding: 10px 20px;
+}
+.blogDescription:focus{
+  outline: none;
+  border: 2px solid var(--borderColor);
+}
+.deletePost, .editPost{
+    font-size: 15px;
+    color: var(--navbarColor);
+    cursor: pointer;
+    margin-right: 10px;
+}
+.appendDiv{
+  background-color: white;
+  /* border: 2px solid green; */
+  margin: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* PopUp Window */
+.popUPCapturefullScreen{
+    
+  position: absolute;
+  inset: 0;
+  height: 100vh;
+  display: flex ;
+  justify-content: center ;
+  align-items: center;
+  /* border: 3px solid red; */
+  display: none;
+  
+}
+.popUpWindow{
+  /* display: none; */
+  padding: 5px;
+  border-radius: 10px;
+  height: 400px;
+  width: 500px;
+  /* border: 3px solid red; */
+  background-color: #a88beb9c;
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.popUpButton{
+  width: 30%;
+  border-radius: 10px;
+  padding: 7px;
+
+  /* border: 3px solid red; */
+
+}
+.popUpCross{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  /* border: 3px solid red; */
+  cursor: pointer;
+
+
+}
+.popUpCross:active{
+  scale: 1.1;
+}
+.textArea{
+  border-radius: 5px;
+  padding: 10px;
+
+  margin: 20px;
+  overflow-y: scroll;
+
+}
+.textArea:focus{
+  outline: none;
+  border: 2px solid var(--borderColor);
+}
+.postImageChange{
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.editInput{
+  width: 90%;
+  height: 40px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+.editInput:focus{
+  outline: none;
+  border: 2px solid var(--borderColor);
+}
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  /* border: 2px solid green; */
+  width: 120px; /* Set the desired width */
+  height: 120px; /* Set the desired height */
+
+}
+
+
+
+/*        ////////////////////// Media Query  ///////////////////////////////////*/
+
+/* Smartphones */
+@media only screen and (max-width: 500px) {
+  .navBArColor {
+    font-weight: bold;
+    font-size: medium;
+    /* border: 2px solid black; */
+    margin: 0 !important;
+  }
+  .navBArColor div {
+    /* border: 2px solid black; */
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: space-evenly !important;
+  }
+  .headingSignup {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .postDiv {
+    background-color: var(--backgroundShade);
+    padding: 0px;
+    border-radius: 10px;
+    margin: 0;
+  }
+  .appendDiv {
+    /* border: 2px solid green; */
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .leftbody {
+    /* border: 2px solid black; */
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .leftbody h4{
+    padding: 20px;
+  }
+  .rightBody {
+    display: none;
+  }
+
+
+  .postDataDiv {
+    margin: 0px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .postDataDiv input{
+      height: 40px;
+      border-radius: 10px;
+      margin: 10px ;
+      padding: 10px 10px;
+  }
+ 
+  .postDataDiv textarea{
+  
+      border-radius: 10px;
+      margin: 10px ;
+      padding: 10px 10px;
+  }
+  .signUpBtn {
+    margin: 10px;
+  }
+
+  .popUPCapturefullScreen{
+    position: absolute;
+    inset: 0;
+    height: 100vh;
+    display: flex ;
+    justify-content: center ;
+    align-items: center;
+    /* border: 3px solid red; */
+    display: none;
+    
+  }
+  .popUpWindow{
+    padding: 0px;
+    height: 400px;
+    width: 350px;
+    /* border: 3px solid red; */
+    background-color: #a88beb9c;
+    position: fixed;
+    top: 30%;
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  
+  }
+  .popUpButton{
+    width: 40%;
+   
+  
+    /* border: 3px solid red; */
+  
+  }
+  
+  .textArea{
+    height: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    overflow-y: scroll;
+  
+  }
+  
+  .postImageChange{
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .editInput{
+    margin:  20px;
+  }
+
+
+}
