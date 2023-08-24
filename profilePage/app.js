@@ -4,21 +4,11 @@ import {
     doc,
     getDoc,
     onAuthStateChanged,
-    signOut,
-    setDoc,
-    addDoc,
-    collection,
-    getDocs,
     storage,
     ref,
     uploadBytesResumable,
     getDownloadURL,
-    deleteDoc,
     updateDoc,
-    serverTimestamp,
-    query,
-    orderBy,
-    signInWithEmailAndPassword,
   } from "../firebase.Config.js";
   
 let currentLoggedInUser ;
@@ -31,6 +21,17 @@ const newPassword = document.querySelector('.newPassword')
 const repeatPassword = document.querySelector('.repeatPassword')
 const uploadPopUpPic = document.querySelector("#pop_image");
 const profileImage = document.querySelector(".profileImage");
+const loginBtn = document.querySelector(".loginBtn");
+const logoutbtn = document.querySelector(".logoutbtn");
+
+logoutbtn.addEventListener('click',()=>{
+  loader.style.display = "block";
+  setTimeout(() => {
+    loader.style.display = "none";
+    window.location.href = '../index.html'
+  }, 3000);
+
+})
 
 uploadPopUpPic.addEventListener("change", () => {
   const file = uploadPopUpPic.files[0];
@@ -198,6 +199,7 @@ async function getUserData(uid) {
       // console.log(profilePicture)
       firstNameInput.value = firstName
      lastNameInput.value = lastName
+     loginBtn.innerHTML = firstName + ' ' +lastName
      profileImage.src = profilePicture || profileImage.src 
      profilePicNotLoad = profilePicture
     } else {
